@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surprise 🎁</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Final Surprise 💖</h1>
+
+<p>
+This is just a small surprise 😌<br><br>
+Your real gift is coming in JUNE If possible🎁✨<br><br>
+So stay excited... something BIG is coming 😎🔥
+</p>
+
+<h2>Love you sister 💕</h2>
+</div>
+
+</body>
+<script>
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.innerHTML="💖";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),5000);
+},300);
+</script>
+</html>

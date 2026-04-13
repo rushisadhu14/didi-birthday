@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sarcasm 😏</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Wait… YOUR Birthday? 🤨</h1>
+
+<p>
+So today is your birthday...<br><br>
+But where is MY gift?? 😌<br><br>
+I survived your drama for years 😂<br><br>
+I deserve something too 🤡
+</p>
+
+<p><b>Anyway Happy Birthday Mudrika 💖🎂</b></p>
+
+<button onclick="next()">Next 😅</button>
+</div>
+
+<script>
+function next(){
+    window.location="page4.html";
+}
+</script>
+
+</body>
+<script>
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.innerHTML="💖";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),5000);
+},300);
+</script>
+</html>

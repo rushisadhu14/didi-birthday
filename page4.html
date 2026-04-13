@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>More Photos 💕</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>More love💖</h1>
+
+<div class="gallery">
+<img src="981b0967-fd57-4db7-be4a-cafd02d7628a.JPG">
+<img src="88bff041-56ef-4778-b660-6ae6c76e3ded.JPG">
+<img src="WhatsApp Image 2026-04-14 at 1.08.30 AM.jpeg">
+</div>
+
+<button onclick="next()">Final 🎁</button>
+</div>
+
+<script>
+function next(){
+    window.location="page5.html";
+}
+</script>
+
+</body>
+<script>
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.innerHTML="💖";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),5000);
+},300);
+</script>
+</html>

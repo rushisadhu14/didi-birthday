@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secret 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>🔐 Enter PIN</h1>
+<p>Only for Mudrika 😌</p>
+
+<input type="password" id="pin">
+<br><br>
+<button onclick="check()">Unlock 💖</button>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function check(){
+    let pin = document.getElementById("pin").value;
+    if(pin == "2000"){
+        window.location = "page2.html";
+    } else {
+        document.getElementById("msg").innerText = "Wrong PIN 😏";
+    }
+}
+</script>
+
+</body>
+<script>
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.innerHTML="💖";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),5000);
+},300);
+</script>
+</html>
